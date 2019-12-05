@@ -3,7 +3,7 @@ import unittest
 
 sys.path.append("../")
 
-from scripts.chapter1_array_and_strings import check_all_charac_unique
+from scripts.chapter1_array_and_strings import check_all_charac_unique,check_all_charac_unique_no_set
 
 
 class TestChapter1Methods(unittest.TestCase):
@@ -18,3 +18,5 @@ class TestChapter1Methods(unittest.TestCase):
 
         self.assertEqual(check_all_charac_unique(string_unique), True)
         self.assertEqual(check_all_charac_unique(string_not_unique), False)
+        self.assertEqual(check_all_charac_unique_no_set(string_unique), True)
+        self.assertEqual(check_all_charac_unique_no_set(string_not_unique), False)
