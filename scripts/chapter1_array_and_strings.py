@@ -38,3 +38,13 @@ def check_if_all_parathensis_balanced(string):
         return False
     else:
         return True
+
+
+def replace_spaces(string):
+    """ replace spaces with a %20 """
+    new_string = ""
+    for s in string:
+        if s == " ":
+            s = "%20"
+        new_string = new_string + s
+    return new_string
